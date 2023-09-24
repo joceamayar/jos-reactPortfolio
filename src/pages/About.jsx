@@ -1,6 +1,9 @@
 function About() {
   return (
     <div>
+    <img src="./avatar.jpeg" alt="..." class="img-thumbnail"></img>
+
+
     <h1>About Page</h1>
     <p>
       Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
