@@ -42,8 +42,35 @@
 } */
 
 
+
+
+
+/* Portfolio */
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 16px; 
+}
+
+/* Footer */
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-icon {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #ccc;
 }

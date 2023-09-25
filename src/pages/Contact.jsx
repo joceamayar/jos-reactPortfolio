@@ -38,10 +38,10 @@ function Contact() {
     return (
         <>
             <form>
-                <div class="form-row">
-                    <div class="col">
+                <div className="form-row">
+                    <div className="col">
                         <label for="inputEmail4">Name</label>
-                        <input type="text" class="form-control" placeholder="First name"
+                        <input type="text" className="form-control" placeholder="First name"
                             onChange={(e) => { setName(e.target.value); validateName(); }}
                             onBlur={(e) => { validateName(); }}
                             onMouseEnter={(e) => validateName()}
@@ -50,11 +50,11 @@ function Contact() {
                     </div>
                 </div>
 
-                <div class="form-row"></div>
+                <div className="form-row"></div>
 
-                <div class="form-group col-md-6">
+                <div className="form-group col-md-6">
                     <label for="inputEmail4">Email address </label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email"
+                    <input type="email" className="form-control" id="inputEmail4" placeholder="Email"
                         onChange={(e) => { setEmail(e.target.value); validateEmail(); }}
                         onBlur={(e) => { validateEmail(); }}
                         onMouseEnter={(e) => validateEmail()}
@@ -63,9 +63,9 @@ function Contact() {
                         </input>
                 </div>
 
-                <div class="form-group">
+                <div className="form-group">
                     <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"
                         onChange={(e) => { setMessage(e.target.value); validateMessage(); }}
                         onBlur={(e) => { validateMessage(); }}
                         onMouseEnter={(e) => validateMessage()}
@@ -73,7 +73,7 @@ function Contact() {
                     </textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">Submit</button>
 
             </form>
 

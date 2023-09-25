@@ -3,6 +3,8 @@ import {Outlet} from "react-router-dom";
 import './App.css';
 
 import NavTabs from './components/NavTabs';
+import Footer from './components/Footer';
+
 
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
       <PageContent>
         <Outlet></Outlet>
       </PageContent>
+
+      <Footer>
+      
+      </Footer>
 
     </div>
   )
