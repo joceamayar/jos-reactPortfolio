@@ -11,14 +11,6 @@ function NavTabs() {
       <li className="nav-item">
         <Link
           to="/"
-          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/About"
           className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
         >
           About me 
@@ -30,6 +22,7 @@ function NavTabs() {
           className={currentPage === '/Blog' ? 'nav-link active' : 'nav-link'}
         >
           Portfolio
+          
         </Link>
       </li>
       <li className="nav-item">
@@ -38,6 +31,7 @@ function NavTabs() {
           className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact me
+
         </Link>
       </li>
       <li className="nav-item">
@@ -46,6 +40,7 @@ function NavTabs() {
           className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
         >
           Resume
+
         </Link>
       </li>
     </ul>

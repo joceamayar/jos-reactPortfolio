@@ -58,9 +58,11 @@
 
 /* Portfolio */
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr;
   gap: 16px; 
+  margin: 0 auto; 
+  width: 80%;
 }
 
 /* Footer */
