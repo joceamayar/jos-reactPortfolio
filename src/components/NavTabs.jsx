@@ -9,7 +9,7 @@ function NavTabs() {
   return (
   
     <ul className="nav nav-tabs">
-      <li className="nav-item">
+      <li className="nav-item" id="navtab">
         <Link
           to="/"
           className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}

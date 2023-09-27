@@ -1,7 +1,5 @@
 #root {
-  max-width: 90%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -10,21 +8,28 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background-color: black;
+  background-color: #282c34;
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding: 3%;
-  padding: 40px;
-} 
+  padding: 18px;
+}
 
-.
+a.nav-link {
+  color: rgb(245, 243, 247);
+
+}
 
 /* About me  */
-.about-me {
-  padding: 10%;
-  flex-wrap: wrap;
-  background: rgba(0,0,0,.55);
 
+.about-me {
+  margin: 3.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 7.5%;
+  flex-wrap: wrap;
+  background-color: #e3e7f0;
+  border-radius: 1%;
+  
 }
 
 .avatar {
@@ -32,19 +37,12 @@ header {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  padding: 1%;
+  align-content: center;
 }
 
-.about{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  border-radius: 10px;
-  max-width: 1000px;
-  background: rgba(0,0,0,.55);
-  padding: 30px 10px;
-  margin: 20px;
+p {
+  padding-top: 5%;
+  text-align: left;
 }
 
 
@@ -52,18 +50,19 @@ header {
 .portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px; 
-  margin: 0 auto; 
+  gap: 16px;
+  margin: 0 auto;
   width: 80%;
 }
 
 /* Footer */
 
 .footer {
+
   background-color: #282c34;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5%;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -76,9 +75,13 @@ header {
   text-decoration: none;
 }
 
-.social-icon:hover {
-  color: #ccc;
-  /* 
+.copyright {
+  margin-left: auto;
+}
+
+
+
+/* 
   
   
   .logo {
@@ -116,4 +119,3 @@ header {
   .read-the-docs {
     color: #888;
   } */
-}

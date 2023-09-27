@@ -2,8 +2,8 @@ function About() {
   return (
     <section id="intro-container">
             <div className="about-me">
-                <h2 id="intro-h3">Jocelin Amaya</h2>
                 <img src="/src/assets/avatar.jpeg" alt="A woman in a business suit" class="avatar"></img>
+               
                 <p id="intro-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, alias ipsa
                     rerum
                     assumenda veniam temporibus ullam magnam molestiae, error, repellat eum accusamus voluptatem placeat
@@ -20,8 +20,8 @@ function About() {
                     Nostrum iure consectetur in asperiores provident. Corrupti vitae dolorum, dolore libero voluptate
                     commodi doloremque aliquam quas eligendi error delectus nostrum totam laboriosam iusto inventore,
                     earum ex numquam doloribus rem. Laboriosam!</p>
-            </div>
-
+                    </div>
+            
         </section>
   );
 }

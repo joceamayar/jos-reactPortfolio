@@ -14,9 +14,11 @@ function Footer() {
       <a href="https://www.linkedin.com/in/jocelinamaya?trk=people-guest_people_search-card" className="social-icon" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
-      <small>
-                Copyright © 2023 Jocelin Amaya. 
-              </small>
+     
+        <small className="copyright">
+          Copyright © 2023 Jocelin Amaya.
+        </small>
+      
     </footer>
   );
 }
