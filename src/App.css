@@ -1,6 +1,9 @@
 #root {
   margin: 0 auto;
-  text-align: center;
+  font-family: "Poppins";
+  /* background-image: url('./assets/10.png'); */
+
+
 }
 
 header {
@@ -8,19 +11,17 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background-color: #282c34;
+  background-color: black;
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding: 18px;
+  padding: 2%;
+  
 }
 
 a.nav-link {
   color: rgb(245, 243, 247);
-
 }
 
 /* About me  */
-
 .about-me {
   margin: 3.5%;
   margin-left: 10%;
@@ -28,8 +29,11 @@ a.nav-link {
   padding: 7.5%;
   flex-wrap: wrap;
   background-color: #e3e7f0;
+  text-align: center;
   border-radius: 1%;
-  
+  background-image: url('./assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .avatar {
@@ -45,7 +49,6 @@ p {
   text-align: left;
 }
 
-
 /* Portfolio */
 .portfolio {
   display: grid;
@@ -53,6 +56,99 @@ p {
   gap: 16px;
   margin: 0 auto;
   width: 80%;
+  padding: 3%;
+}
+
+.card {
+  background-color: #F6F8FD;
+  color: black;
+}
+#project-btn{
+  background-color: #111111;
+}
+
+/* Contact  */
+
+.contactMeForm {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 1440px;
+  height: 560px;
+  background-color: #F6F8FD;
+  margin: auto;
+  border-radius: 1%;
+}
+
+form {
+  text-align: center;
+}
+
+#contactMeText {
+  color: #191b1c;
+  font-size: 64px;
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 72px;
+  text-align: center;
+
+}
+
+.inputBox {
+  top: 582px;
+  left: 80px;
+  width: 504px;
+  height: 54px;
+  padding: 0px 8px;
+  border: 1px solid #cdcdd2;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1c1c1e;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 300;
+  line-height: 22px;
+  outline: none;
+}
+
+.sendMessage {
+  top: 910px;
+  left: 80px;
+  width: 504px;
+  height: 46px;
+  padding: 0px 8px;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Poppins";
+  line-height: 26px;
+  outline: none;
+}
+#contactCard{
+  padding-left:20%;
+  padding: auto;
+}
+
+#icon {
+  width: 6.5%;
+  height: 6.5%;
+  color: #111111;
+  padding: 1%;
+}
+
+span {
+  font-size: 22px;
+  padding: 2%;
+}
+.inputDiv{
+  margin: 2%;
+}
+h4{
+  text-align: left;
 }
 
 /* Footer */

@@ -41,10 +41,6 @@ function Portfolio() {
         link="https://cdziedzic.github.io/Nebula-Narratives/"
       />
 
-
-
-
-
     </div>
   );
 }

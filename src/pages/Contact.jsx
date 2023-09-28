@@ -37,55 +37,74 @@ function Contact() {
 
     return (
         <>
-            <form>
-                <div className="form-row">
-                    <div className="col">
-                        <label for="inputEmail4">Name</label>
-                        <input type="text" className="form-control" placeholder="First name"
+            <div>
+                <p id="contactMeText"> Are you intersted in collaborating? Lets get in touch! </p>
+
+                <div className="contactMeForm">
+                    <form>
+                        <h4>Contact me</h4>
+                        <div className="inputDiv">
+                        <input type="text" className="inputBox" placeholder="Your Name"
                             onChange={(e) => { setName(e.target.value); validateName(); }}
                             onBlur={(e) => { validateName(); }}
                             onMouseEnter={(e) => validateName()}
                         >
                         </input>
-                    </div>
-                </div>
+                        </div>
 
-                <div className="form-row"></div>
-
-                <div className="form-group col-md-6">
-                    <label for="inputEmail4">Email address </label>
-                    <input type="email" className="form-control" id="inputEmail4" placeholder="Email"
-                        onChange={(e) => { setEmail(e.target.value); validateEmail(); }}
-                        onBlur={(e) => { validateEmail(); }}
-                        onMouseEnter={(e) => validateEmail()}
-
+                        <div className="inputDiv">
+                        <input type="email" className="inputBox" id="inputEmail4" placeholder="Your Email"
+                            onChange={(e) => { setEmail(e.target.value); validateEmail(); }}
+                            onBlur={(e) => { validateEmail(); }}
+                            onMouseEnter={(e) => validateEmail()}
                         >
                         </input>
+                        </div>
+                        <div className="inputDiv">
+                        <textarea className="inputBox" id="exampleFormControlTextarea1" placeholder="Write a message..." rows="3"
+                            onChange={(e) => { setMessage(e.target.value); validateMessage(); }}
+                            onBlur={(e) => { validateMessage(); }}
+                            onMouseEnter={(e) => validateMessage()}
+                        >
+                        </textarea>
+                        </div>
+
+                        <button type="submit" className="sendMessage">Send Message</button>
+
+                        <div>
+                            {errorNameMessage}
+                        </div>
+                        <div>
+                            {errorEmailMessage}
+                        </div>
+                        <div>
+                            {errorMessage}
+                        </div>
+                    </form>
+
+                    <div id="contactCard">
+
+                        <h5>Reach out via email or phone:</h5>
+
+                            <div className="phone">
+                                <img src="./src/assets/phone-icon.png" alt="Phone Icon" id="icon"></img>
+                                <span>+123-456-7890</span>
+                            </div>
+
+                            <div className="email">
+                                <img src="./src/assets/email-icon.png"  alt="Email Icon" id="icon"></img>
+                                <span>example@example.com</span>
+                            </div>
+
+                    </div>
+
+
+
                 </div>
 
-                <div className="form-group">
-                    <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"
-                        onChange={(e) => { setMessage(e.target.value); validateMessage(); }}
-                        onBlur={(e) => { validateMessage(); }}
-                        onMouseEnter={(e) => validateMessage()}
-                    >
-                    </textarea>
-                </div>
-
-                <button type="submit" className="btn btn-primary">Submit</button>
-
-            </form>
-
-            <div>
-                {errorNameMessage}
             </div>
-            <div>
-                {errorEmailMessage}
-            </div>
-            <div>
-                {errorMessage}
-            </div>
+
+
 
         </>
     );
@@ -94,6 +113,10 @@ function Contact() {
 
 export default Contact;
 
+
+
+
+//Note to self
 // let stuff = useState(""); // [primitiveType,function that changes the value]
 // let errorMessage = stuff[0];
 // let setErrorMessage = stuff[1];

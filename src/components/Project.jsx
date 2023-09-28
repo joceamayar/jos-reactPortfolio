@@ -10,7 +10,7 @@ function Project({ title, imageUrl, description, link }) {
           <p className="card-text">
             {description}
           </p>
-          <a href={link} className="btn btn-primary">view project</a>
+          <a href={link} className="btn btn-primary" id="project-btn">view project</a>
         </div>
       </div>
     </div>
