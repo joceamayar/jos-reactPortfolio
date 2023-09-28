@@ -1,5 +1,5 @@
 
-function Project({ title, imageUrl, description, link }) {
+function Project({ title, imageUrl, description, siteLink, codeLink }) {
 
   return (
     <div>
@@ -10,7 +10,12 @@ function Project({ title, imageUrl, description, link }) {
           <p className="card-text">
             {description}
           </p>
-          <a href={link} className="btn btn-primary" id="project-btn">view project</a>
+          <div className="card-ftr">
+            <a href={siteLink} className="btn btn-primary" id="project-btn">view project</a>
+            <a href={codeLink} id="gitHub-link">
+              <img src="./src/assets/github.png" alt="Phone Icon" id="gitHub"></img>
+            </a>
+          </div>
         </div>
       </div>
     </div>
