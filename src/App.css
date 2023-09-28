@@ -171,6 +171,26 @@ span {
 h4 {
   text-align: left;
 }
+/* Resume */
+
+.resumeCard{
+ 
+  border-radius: 2%;
+  margin: 2%;
+  color: black;
+  text-align:left;
+  background-image: url('./assets/11.png');
+  background-blend-mode: color;
+  padding: 6%;
+
+}
+
+#lists{
+  background-color: #111111;
+  padding: 1%;
+  color:white;
+}
+
 
 /* Footer */
 
