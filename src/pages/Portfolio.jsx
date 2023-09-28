@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from '/src/components/Project'; 
+import Nebula from "../assets/nebulaNarratives.png"
 
 function Portfolio() {
   return (
@@ -7,7 +8,7 @@ function Portfolio() {
    
       <Project
         title="NebulaNarratives "
-        imageUrl="/src/assets/nebulaNarratives.png"
+        imageUrl={Nebula}
         description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
         siteLink="https://cdziedzic.github.io/Nebula-Narratives/"
         codeLink="https://github.com/joceamayar"
