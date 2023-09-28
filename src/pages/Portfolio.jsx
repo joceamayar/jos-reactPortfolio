@@ -1,6 +1,16 @@
 import React from 'react';
 import Project from '/src/components/Project'; 
-import Nebula from "../assets/nebulaNarratives.png"
+
+import Nebula from "../assets/nebulaNarratives.png";
+import EventPulse from "/src/assets/eventPulse.png";
+import Placeholder from "/src/assets/placeholder1.png";
+import Placeholder1 from "/src/assets/placeholder1.png";
+import Placeholder3 from "/src/assets/placeholder3.png";
+import Placeholder4 from "/src/assets/placeholder4.png";
+import Placeholder6 from "/src/assets/placeholder6.png";
+
+
+
 
 function Portfolio() {
   return (
@@ -15,34 +25,34 @@ function Portfolio() {
       />
          <Project
         title="EventPulse"
-        imageUrl="/src/assets/eventPulse.png"
+        imageUrl={EventPulse}
         description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
         siteLink="https://event-plannerkas-1ae2bc64599a.herokuapp.com/"
         codeLink="https://github.com/joceamayar/Event_Planner"
       />
         <Project
         title="Placeholder "
-        imageUrl="/src/assets/placeholder1.png"
+        imageUrl={Placeholder}
         description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
         codeLink="https://github.com/joceamayar"
       />
         <Project
         title="Placeholder"
-        imageUrl="/src/assets/placeholder3.png"
-        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
-        siteLink="https://event-plannerkas-1ae2bc64599a.herokuapp.com/"
-        codeLink="https://github.com/joceamayar"
-      />
-        <Project
-        title="Placeholder"
-        imageUrl="/src/assets/placeholder4.png"
+        imageUrl={Placeholder3}
         description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
         siteLink="https://event-plannerkas-1ae2bc64599a.herokuapp.com/"
         codeLink="https://github.com/joceamayar"
       />
         <Project
         title="Placeholder"
-        imageUrl="/src/assets/placeholder6.png"
+        imageUrl={Placeholder4}
+        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+        siteLink="https://event-plannerkas-1ae2bc64599a.herokuapp.com/"
+        codeLink="https://github.com/joceamayar"
+      />
+        <Project
+        title="Placeholder"
+        imageUrl={Placeholder6}
         description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
         siteLink="https://event-plannerkas-1ae2bc64599a.herokuapp.com/"
         codeLink="https://github.com/joceamayar"

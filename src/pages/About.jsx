@@ -1,8 +1,10 @@
+import Avatarimg from "/src/assets/avatar.jpeg" ;
+
 function About() {
   return (
     <section id="intro-container">
       <div className="about-me">
-        <img src="/src/assets/avatar.jpeg" alt="A woman in a business suit" className="avatar"></img>
+        <img src={Avatarimg} alt="A woman in a business suit" className="avatar"></img>
 
         <p id="intro-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, alias ipsa
           rerum
